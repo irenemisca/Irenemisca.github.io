@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shared.css">
+    <title>Usuario Banco</title>
+    <!-- estilos y código JS externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <!-- nuestros estilos -->
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <div >
+            <a class="main-header__brand" href="index.html">Banco</a>
+        </div>
+    
+        
+            <nav class="main-nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="gestores.html">Gestores</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__item_mensajes" href="mensajes.html">Mensajes</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item_logout">
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main><h1 class="main-login__title">Iniciar Sesión</h1>
+
+    <form class="login-form">
+
+          <label class="login-form__label" for="nombre">Usuario</label>
+          <input type="text" name="nombre" id="nombre">
+        
+          <label class="login-form__label" for="apellidos">Password</label>
+          <input type="text" name="apellidos" id="apellidos">
+        <br>
+        <br>
+          <input class="boton_" type="submit" value="Send">
+       
+        
+      </form>
+</main>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <style>
+  
+          div.relative {
+            position: relative;
+          
+            /* Se mueve un 25% a la izquierda respecto a su posición en static */
+            left: 25%;
+          
+            width: 400px;
+            height: 200px;
+            border: 3px solid green;
+          }
+          
+          div.absolute {
+            position: absolute;
+            top: 120px;
+          
+            /* Se mueve un 15% a la izquierda respecto su ancestro posicionado más cercano */
+            left: 15%;
+          
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+          }
+          
+          </style>
+          
+          <div class="relative">Este div tiene position relative
+          
+            <!-- El ancestro de este elemento es div.relative-->
+            <!-- El elemento se posiciona respecto al elemento div.relative considerando las propiedades top, bottom, left y right -->
+            <!-- Si al elemento se le eliminan las propiedades top, left, right, bottom, bottom, entonces se posiciona respecto al contenido del elemento ancestro (justo debajo), sin superponerse -->
+            <!-- Si el elemento se saca fuera del ancestro, entonces se posiciona con respecto al body y considerando las propiedades top, bottom, left y right  -->
+            <!-- Si el elemento se saca fuera del ancestro y se eliminan todas las propiedades top, bottom, left y right, entonces se convierte en un elemento static (posicionándose debajo del div anterior siguiendo el flujo CSS)  -->
+            <div class="absolute">
+            Este elemento div tiene posición absolute
+            </div>
+          
+          </div>
+      
+</body>
+</html>
